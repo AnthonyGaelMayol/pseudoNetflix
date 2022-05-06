@@ -12,6 +12,14 @@
     font-style: normal;
 }
 
+header {
+    border: 1px solid yellowgreen;
+    padding: 15px 15px 100px;
+    position: relative;
+    z-index: 2;
+    background-image: linear-gradient(to bottom, black 0%, black 85%, transparent 100%);
+}
+
 body {
     font-family: Netflix;
     margin: 0;
@@ -25,7 +33,6 @@ a {
 }
 
 .navigation {
-    border: 1px solid greenyellow;
     padding: 0;
     margin: 0;
     display: grid;
@@ -35,9 +42,12 @@ a {
 }
 
 .navigation-item {
-    border: 1px solid greenyellow;
     list-style: none;
     text-align: center;
+}
+
+.featured {
+    margin-top: -50px;
 }
 
 .credits {
