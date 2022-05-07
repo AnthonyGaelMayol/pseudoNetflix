@@ -12,12 +12,12 @@
     font-style: normal;
 }
 
-header {
-    border: 1px solid yellowgreen;
+.header {
+    padding-bottom: 100px;
     padding: 15px 15px 100px;
     position: relative;
     z-index: 2;
-    background-image: linear-gradient(to bottom, black 0%, black 85%, transparent 100%);
+    background-image: linear-gradient(to bottom, black 0%, black 70%, rgba(0,0,0,.5) 85%, transparent 100%);
 }
 
 body {
@@ -47,7 +47,105 @@ a {
 }
 
 .featured {
-    margin-top: -50px;
+    margin-top: -90px;
+    position: relative;
+}
+
+.featured-details {
+    /* border: 1px solid red; */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right:0;
+    background-image: linear-gradient(to top, black 0%, black 35%, transparent 100%)
+}
+
+.featured-actions {
+    /* border: 1px solid blueviolet; */
+    display: flex;
+    /* height: 100px; */
+    /* justify-content: space-around; */
+    justify-content: space-evenly;
+    align-items: center;
+    padding-bottom: 2em;
+}
+
+.button {
+    /* border: 1px solid red; */
+    background: white;
+    display: flex;
+    align-items: center;
+    padding: 5px 1em 5px .5em;
+    border: none;
+    border-radius: 3px;
+
+}
+
+.button::before {
+    content: '';
+    /* border: 1px solid blue; */
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    margin-right: 5px;
+
+}
+
+.button-secondary {
+    /* border: 1px solid blue; */
+    background: none;
+    color: white;
+    font-size: 1em;
+    min-width: 100px;
+    border: none;
+    cursor: pointer;
+}
+
+.button-secondary::before {
+    content: '';
+    width: 25px;
+    height: 25px;
+    display: block;
+    /* border: 1px solid green; */
+    margin: auto;
+    margin-bottom: 5px;
+}
+
+.icon-plus::before {
+    background: url('../../images/icons/plus.svg');
+}
+
+.icon-play::before {
+    background: url('../../images/icons/play.svg');
+}
+
+.icon-info::before {
+    background: url('../../images/icons/info.svg');
+}
+
+.tag {
+    /* border: 1px solid white; */
+    display: flex;
+}
+
+.tag:before {
+    content: '*';
+    margin-right: 10px;
+    position: relative;
+    top: 2px;
+}
+
+.tag:first-child::before {
+    display: none;
+}
+
+.tags {
+    /* border: 1px solid yellowgreen; */
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    list-style: none;
+    padding: 0;
 }
 
 .credits {
