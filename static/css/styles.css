@@ -49,6 +49,7 @@ a {
 .featured {
     margin-top: -90px;
     position: relative;
+    overflow: hidden;
 }
 
 .featured-details {
@@ -146,6 +147,40 @@ a {
     gap: 10px;
     list-style: none;
     padding: 0;
+}
+
+main {
+    border: 1px solid white;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.list {
+    padding: 0 1em;
+}
+
+.list-content {
+    white-space: nowrap;
+    overflow-x: auto;
+}
+
+.list-item {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.list-item:first-child {
+    margin: 0;
+}
+
+.footer {
+    border: solid 2px yellowgreen;
+    background: grey;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
 
 .credits {
