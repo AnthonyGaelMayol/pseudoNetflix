@@ -25,6 +25,7 @@ body {
     margin: 0;
     background: black;
     color: white;
+    /* padding-bottom: 108px; */
 } 
 
 a {
@@ -175,12 +176,44 @@ main {
 }
 
 .footer {
-    border: solid 2px yellowgreen;
-    background: grey;
-    position: fixed;
+    background: black;
+    position: sticky;
     bottom: 0;
     left: 0;
     right: 0;
+    padding: 1em 0 0;
+}
+
+.tab-list {
+    border: solid 2px black;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-auto-flow: column;
+    list-style: none;
+    color: grey;
+    padding-bottom: 1em;
+}
+
+.tab-item {
+    text-align: center;
+}
+
+.tab-item a {
+    color: grey;
+}
+
+.tab-item path{
+    fill: grey;
+}
+.tab-item svg {
+    display: block;
+    margin: auto; 
+}
+
+.tab-item:hover :is(path, span) {
+    fill: white;
+    color: white;
 }
 
 .credits {
